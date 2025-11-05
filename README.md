@@ -13,8 +13,6 @@
 
 </div>
 
----
-
 ## 📋 Table of Contents
 
 - [✨ Features](#-features)
@@ -27,8 +25,6 @@
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 - [👨‍💻 Credits](#-credits)
-
----
 
 ## ✨ Features
 
@@ -51,8 +47,6 @@
 - **🌐 Multiverse Compatible**: Seamless integration with Multiverse-Core
 - **🚀 Performance First**: Optimized for servers with multiple worlds
 - **📱 Modern Codebase**: Built with Java 21 and latest Minecraft APIs
-
----
 
 ## 🌎 Available Biomes
 
@@ -83,8 +77,6 @@
 </td>
 </tr>
 </table>
-
----
 
 ## ⚡ Performance Optimizations
 
@@ -117,8 +109,6 @@ G1axWorldGenerator automatically applies comprehensive optimizations to every ge
 
 </details>
 
----
-
 ## 📦 Installation
 
 ### 📋 **Requirements**
@@ -144,8 +134,6 @@ mv G1axWorldGenerator.jar /path/to/your/server/plugins/
 ./restart.sh
 ```
 
----
-
 ## 🎮 Usage
 
 ### 🌍 **Creating Worlds**
@@ -167,8 +155,6 @@ mv G1axWorldGenerator.jar /path/to/your/server/plugins/
 /mv tp my_plains
 /mv tp my_void
 ```
-
----
 
 ## 🔧 Multiverse Integration
 
@@ -201,7 +187,6 @@ G1axWorldGenerator is designed to work seamlessly with **Multiverse-Core**:
 ```
 
 </details>
----
 
 ## 🛠️ Building from Source
 
@@ -263,8 +248,6 @@ We welcome contributions! Here's how you can help:
 - Add **JavaDoc comments** for public methods
 - Keep **performance** as a priority
 - Test with **multiple Minecraft versions**
-
----
 
 ## 📄 License
 
