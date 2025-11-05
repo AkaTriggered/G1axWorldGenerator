@@ -1,0 +1,7 @@
+name: G1axWorldGenerator
+version: 1.0.0
+main: dev.akatriggered.g1axWorldGen.G1axWorldGenerator
+api-version: 1.21
+load: STARTUP
+author: AkaTriggered
+website: https://github.com/AkaTriggered/G1axWorldGenerator
