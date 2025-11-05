@@ -156,11 +156,6 @@ mv G1axWorldGenerator.jar /path/to/your/server/plugins/
 /mv create <world_name> normal -g G1axWorldGenerator:<BIOME_ID>
 ```
 
-#### With Vanilla Bukkit
-```bash
-/mv create <world_name> normal -g G1axWorldGenerator:<BIOME_ID>
-```
-
 ### 📝 **Example Commands**
 ```bash
 # Create different biome worlds
@@ -207,13 +202,6 @@ G1axWorldGenerator is designed to work seamlessly with **Multiverse-Core**:
 ```
 
 </details>
-
-### 🎯 **Pro Tips**
-- Use **different world names** for each biome type
-- Set up **world-specific permissions** with your permissions plugin
-- Create **hub worlds** using the VOID biome for spawn areas
-- Use **ICE** and **SNOW** biomes for winter-themed areas
-
 ---
 
 ## 🛠️ Building from Source
@@ -251,26 +239,6 @@ mvn test
 # Create development build
 mvn package -DskipTests
 ```
-
----
-
-## 📸 Screenshots
-
-<div align="center">
-
-| 🌾 Plains World | 🏜️ Desert World |
-|:---:|:---:|
-| ![Plains](https://via.placeholder.com/400x200/4CAF50/FFFFFF?text=Plains+Biome) | ![Desert](https://via.placeholder.com/400x200/FFC107/FFFFFF?text=Desert+Biome) |
-
-| 🕳️ Void World | 🧊 Ice World |
-|:---:|:---:|
-| ![Void](https://via.placeholder.com/400x200/9C27B0/FFFFFF?text=Void+Biome) | ![Ice](https://via.placeholder.com/400x200/03DAC6/FFFFFF?text=Ice+Biome) |
-
-*📷 Add your own screenshots by replacing the placeholder URLs above*
-
-</div>
-
----
 
 ## 🤝 Contributing
 
@@ -337,8 +305,6 @@ MIT License - You are free to:
 
 </div>
 
----
-
 <div align="center">
 
 ### 🌟 **Star this repository if you found it helpful!**
@@ -351,8 +317,6 @@ MIT License - You are free to:
 
 </div>
 
----
-
 <div align="center">
-<sub>🔄 Last updated: November 2024 | 📧 Questions? Open an issue!</sub>
+<sub>🔄 Last updated: November 2025 | 📧 Questions? Open an issue!</sub>
 </div>
