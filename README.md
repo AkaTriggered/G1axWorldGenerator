@@ -24,7 +24,6 @@
 - [🎮 Usage](#-usage)
 - [🔧 Multiverse Integration](#-multiverse-integration)
 - [🛠️ Building from Source](#️-building-from-source)
-- [📸 Screenshots](#-screenshots)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 - [👨‍💻 Credits](#-credits)
