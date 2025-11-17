@@ -3,28 +3,32 @@
 <div align="center">
 
 ![G1ax Logo](https://img.shields.io/badge/G1ax-WorldGenerator-2b5dad?style=for-the-badge&logo=minecraft)
-[![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen?style=for-the-badge)](https://github.com/AkaTriggered/G1axWorldGenerator/releases)
+[![Version](https://img.shields.io/badge/Version-1.1.0-brightgreen?style=for-the-badge)](https://github.com/AkaTriggered/G1axWorldGenerator/releases)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21+-orange?style=for-the-badge)](https://www.minecraft.net/)
 
-**🚀 Performance-Optimized Custom World Generator with 9 Unique Biomes**
+**🚀 Performance-Optimized Custom World Generator with 12 Unique Biomes**
 
 [📥 Download](https://github.com/AkaTriggered/G1axWorldGenerator/releases) • [🐛 Report Bug](https://github.com/AkaTriggered/G1axWorldGenerator/issues) • [💡 Request Feature](https://github.com/AkaTriggered/G1axWorldGenerator/issues)
 
 </div>
 
+
 ## 📋 Table of Contents
 
 - [✨ Features](#-features)
 - [🌎 Available Biomes](#-available-biomes)
+- [🎮 Spleef Arenas](#-spleef-arenas)
 - [⚡ Performance Optimizations](#-performance-optimizations)
 - [📦 Installation](#-installation)
 - [🎮 Usage](#-usage)
 - [🔧 Multiverse Integration](#-multiverse-integration)
 - [🛠️ Building from Source](#️-building-from-source)
+- [📸 Screenshots](#-screenshots)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 - [👨‍💻 Credits](#-credits)
+
 
 ## ✨ Features
 
@@ -32,21 +36,24 @@
 
 | 🎯 **Core Features** | 🔧 **Technical** | 🎮 **Server Admin** |
 |:---:|:---:|:---:|
-| 9 Unique Biomes | Java 21 Compatible | Zero Configuration |
+| 12 Unique Biomes | Java 21 Compatible | Zero Configuration |
 | Custom Terrain Generation | Paper/Spigot API | Multiverse Ready |
-| Automatic Optimizations | FastNoise Algorithm | Performance Focused |
-| Void Worlds Support | Maven Build System | Open Source |
+| Spleef Arena Generators | FastNoise Algorithm | Performance Focused |
+| Settings Persistence | Maven Build System | Open Source |
 
 </div>
 
 ### 🌟 Key Highlights
 
-- **🎨 9 Themed Biomes**: From lush plains to mysterious void worlds
+- **🎨 12 Themed Biomes**: From lush plains to spleef arenas
+- **🏟️ Spleef Generators**: 3 arena types with customizable layers
+- **💾 Settings Persistence**: Admin customizations survive server restarts
 - **⚡ Auto-Optimization**: Worlds automatically configured for maximum performance
 - **🔌 Plug & Play**: No configuration files needed - just install and use
 - **🌐 Multiverse Compatible**: Seamless integration with Multiverse-Core
 - **🚀 Performance First**: Optimized for servers with multiple worlds
 - **📱 Modern Codebase**: Built with Java 21 and latest Minecraft APIs
+
 
 ## 🌎 Available Biomes
 
@@ -73,6 +80,28 @@
 | 🔥 Nether | `NETHER` | Netherrack with crimson trees |
 | 🧊 Ice | `ICE` | Frozen terrain with ice spikes |
 | 🕳️ Void | `VOID` | Floating islands in void space |
+
+</td>
+</tr>
+</table>
+
+
+## 🎮 Spleef Arenas
+
+<table>
+<tr>
+<td align="center" width="100%">
+
+### 🏟️ **Spleef Generators**
+| Type | ID | Blocks | Layers |
+|------|----|---------|---------| 
+| ❄️ Snow Spleef | `SPLEEF_SNOW` | Snow blocks | 2-5 |
+| 🟫 Dirt Spleef | `SPLEEF_DIRT` | Dirt blocks | 2-5 |
+| 🔄 Multi Spleef | `SPLEEF_MULTI` | Dirt/Snow alternating | 2-5 |
+
+**Usage**: `/mv create <world> normal -g G1axWorldGenerator:SPLEEF_SNOW_3`  
+**Design**: Void underneath for elimination gameplay  
+**Spacing**: 5 blocks between each layer
 
 </td>
 </tr>
@@ -107,7 +136,13 @@ G1axWorldGenerator automatically applies comprehensive optimizations to every ge
 - 💿 **Disk I/O**: Reduced by ~80%
 - 🌐 **Network**: Reduced by ~50%
 
+### 💾 **Settings Persistence**
+- **NEW**: Admin customizations survive server restarts
+- **Automatic**: No configuration required
+- **Compatible**: Works with existing installations
+
 </details>
+
 
 ## 📦 Installation
 
@@ -134,6 +169,7 @@ mv G1axWorldGenerator.jar /path/to/your/server/plugins/
 ./restart.sh
 ```
 
+
 ## 🎮 Usage
 
 ### 🌍 **Creating Worlds**
@@ -151,10 +187,17 @@ mv G1axWorldGenerator.jar /path/to/your/server/plugins/
 /mv create my_void normal -g G1axWorldGenerator:VOID
 /mv create my_nether normal -g G1axWorldGenerator:NETHER
 
+# Create spleef arenas
+/mv create snow_spleef normal -g G1axWorldGenerator:SPLEEF_SNOW_4
+/mv create dirt_arena normal -g G1axWorldGenerator:SPLEEF_DIRT_3
+/mv create multi_spleef normal -g G1axWorldGenerator:SPLEEF_MULTI_5
+
 # Teleport to worlds
 /mv tp my_plains
-/mv tp my_void
+/mv tp snow_spleef
 ```
+
+---
 
 ## 🔧 Multiverse Integration
 
@@ -175,9 +218,15 @@ G1axWorldGenerator is designed to work seamlessly with **Multiverse-Core**:
 /mv create ice_world normal -g G1axWorldGenerator:ICE
 /mv create void_world normal -g G1axWorldGenerator:VOID
 
+# Create spleef arenas
+/mv create spleef_snow_2 normal -g G1axWorldGenerator:SPLEEF_SNOW_2
+/mv create spleef_dirt_3 normal -g G1axWorldGenerator:SPLEEF_DIRT_3
+/mv create spleef_multi_4 normal -g G1axWorldGenerator:SPLEEF_MULTI_4
+/mv create spleef_snow_5 normal -g G1axWorldGenerator:SPLEEF_SNOW_5
+
 # Quick teleport commands
 /mv tp plains_world    # Teleport to plains
-/mv tp void_world      # Teleport to void world
+/mv tp spleef_snow_4   # Teleport to snow spleef
 /mv tp ice_world       # Teleport to ice world
 
 # World management
@@ -187,6 +236,7 @@ G1axWorldGenerator is designed to work seamlessly with **Multiverse-Core**:
 ```
 
 </details>
+
 
 ## 🛠️ Building from Source
 
@@ -224,6 +274,23 @@ mvn test
 mvn package -DskipTests
 ```
 
+
+## 📸 Screenshots
+
+<div align="center">
+
+| 🌾 Plains World | 🏜️ Desert World |
+|:---:|:---:|
+| ![Plains](https://cdn.modrinth.com/data/RqbP3i7i/images/6fdfa5647d2c323ae5ff42e1f65068063390752b.png) | ![Desert](https://cdn.modrinth.com/data/RqbP3i7i/images/009f86a2dff860d21556c15c449686af0805e0e7.png) |
+
+| 🕳️ Void World | 🏟️ Spleef Arena |
+|:---:|:---:|
+| ![Void](https://cdn.modrinth.com/data/RqbP3i7i/images/6a56d029ae54c605e63bef91368d34f43a03717b.png) | ![Spleef](https://cdn.modrinth.com/data/RqbP3i7i/images/1779e56f2366e516db5b4cecf59692449f46eeb4.png) |
+
+
+</div>
+
+
 ## 🤝 Contributing
 
 We welcome contributions! Here's how you can help:
@@ -234,6 +301,7 @@ We welcome contributions! Here's how you can help:
 - 🔧 **Submit Code**: Fork, code, and create a pull request
 - 📖 **Improve Docs**: Help us make the documentation better
 - 🌍 **Add Biomes**: Create new biome generators
+- 🏟️ **Add Arenas**: Design new arena types
 
 ### 📝 **Development Guidelines**
 1. **Fork** the repository
@@ -241,13 +309,6 @@ We welcome contributions! Here's how you can help:
 3. **Commit** your changes (`git commit -m 'Add amazing biome'`)
 4. **Push** to the branch (`git push origin feature/amazing-biome`)
 5. **Open** a Pull Request
-
-### 🎨 **Code Style**
-- Use **Java 21** features where appropriate
-- Follow **standard Java naming conventions**
-- Add **JavaDoc comments** for public methods
-- Keep **performance** as a priority
-- Test with **multiple Minecraft versions**
 
 ## 📄 License
 
@@ -265,7 +326,6 @@ MIT License - You are free to:
 - Include copyright notice
 ```
 
----
 
 ## 👨‍💻 Credits
 
@@ -287,6 +347,8 @@ MIT License - You are free to:
 
 </div>
 
+---
+
 <div align="center">
 
 ### 🌟 **Star this repository if you found it helpful!**
@@ -298,6 +360,8 @@ MIT License - You are free to:
 **Made with ❤️ for the Minecraft community**
 
 </div>
+
+---
 
 <div align="center">
 <sub>🔄 Last updated: November 2025 | 📧 Questions? Open an issue!</sub>
